@@ -36,7 +36,8 @@ body {
     height: 100vh;
     /* background-color: var(--secondary-color); */
     transition: background-color 0.3s;
-    z-index: 9999;
+    z-index: 99997;
+    /* pointer-events: none; */
 }
 
 .nav-left,
@@ -45,7 +46,7 @@ body {
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
-    z-index: 9999;
+    z-index: 99999;
     padding: 2rem;
 /* border: 1px solid var(--primary-color); */
 
@@ -114,6 +115,7 @@ body {
     100% { transform: rotateX(360deg); }
 }
 
+
 .logo-container {
     display: flex;
     text-align: center;
@@ -123,7 +125,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    /* z-index: 999; */
+    /* z-index: 99999; */
 }
 
 .logo-container h1 {
@@ -137,9 +139,12 @@ body {
     font-size: 12vw; /* Adjust the size as needed */
     /* margin 10% above logo */
     margin-top: 40%;
+    /* margin-right: 255px; */
     /* margin-bottom: rem; */
     font-weight: 400;
     /* z-index: ; */
+    z-index: 99999;
+    /* padding-right: 3rem; */
 }
 
 .logo {
@@ -162,7 +167,7 @@ body {
     top: 25%; /* Adjust the value as needed for your desired top positioning */
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 10;
+    z-index: 99999;
 }
 
 
@@ -206,8 +211,8 @@ body {
     top: 29%;
     left: 0;
     width: 100vw;
-    padding: 1rem 5rem;
-    z-index:5;
+    padding: 0 10rem;
+    z-index:99997;
 }
 
 /* Product Card */
@@ -293,7 +298,15 @@ body {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
-/* darkmode .products-grid */
+/* darkmode .products-wrapper */
+.darkmode .products-wrapper {
+    position: absolute;
+    top: 29%;
+    left: 0;
+    width: 100vw;
+    padding: 1rem 5rem;
+    z-index:99997;
+}
 
 .darkmode .nav-container {
     background-color: var(--primary-color);
@@ -322,7 +335,7 @@ body {
     left: 0;
     right: 0;
     font-size: 0.875rem;
-    z-index: 9999;
+    z-index: 99999;
   }
   
   .theme-switch {
