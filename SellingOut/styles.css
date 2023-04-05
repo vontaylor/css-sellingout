@@ -226,12 +226,14 @@ body {
 
 .product:hover .product-img {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 .product:hover .product-name,
 .product:hover .product-material,
 .product:hover .product-price {
   color: var(--accent-color);
+  cursor: pointer;
 }
 
 
@@ -482,7 +484,7 @@ body.scrolled-to-end .social-media-icons {
 }
 
 .social-media-icons a {
-    /* display: inline-block; */
+    display: none;
     margin: 0 0.5rem;
     color: var(--secondary-color);
     font-size: 1.5rem;
