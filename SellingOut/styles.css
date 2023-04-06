@@ -295,10 +295,26 @@ body {
         transform: translateY(0);
     }
 }
+/* Floating animation for the last product */
+@keyframes floatUp {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
 
 .products-grid .product {
     animation: float 7s infinite ease-in-out;
+    animation: floatUp 7s infinite ease-in-out;
 }
+
 
 .darkmode {
     background-color: var(--primary-color);
@@ -632,6 +648,9 @@ body.scrolled-to-end .social-media-icons {
     /* top: 40%; */
     margin: 2%;
     padding: 28%;
+    letter-spacing: 0.2rem;
+    animation: floatUp 8s infinite ease-in-out;
+    animation: float 8s infinite ease-in-out;
 }
 
 
