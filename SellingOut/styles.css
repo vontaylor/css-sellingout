@@ -15,7 +15,7 @@
 }
 
 main {
-    flex-grow: 1;
+    flex-grow: ;
 }
 
 body {
@@ -621,6 +621,21 @@ body.scrolled-to-end .social-media-icons {
     background-color: var(--secondary-hover-color);
 }
 
+
+.contact-page, 
+.about-page,
+.ethics-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* top: 40%; */
+    margin: 2%;
+    padding: 28%;
+}
+
+
+
 /* Media queries */
 @media screen and (max-width: 768px) {
     .product-page {
@@ -640,5 +655,11 @@ body.scrolled-to-end .social-media-icons {
     .product-images img {
         margin-right: 0;
         margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product-page {
+        padding: 2rem;
     }
 }
