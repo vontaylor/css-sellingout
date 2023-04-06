@@ -537,7 +537,7 @@ body.scrolled-to-end .social-media-icons {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 1rem;
+    margin: 2rem;
 }
 
 .product-page {
@@ -549,8 +549,8 @@ body.scrolled-to-end .social-media-icons {
     width: 100%;
     max-width: 1200px;
     margin: 1rem;
-    padding: 1rem;
-    margin-top: 30rem;
+    padding: 8rem;
+    margin-top: 25rem;
 }
 
 .product-description {
@@ -565,7 +565,10 @@ body.scrolled-to-end .social-media-icons {
 }
 
 .product-description p {
-    font-style: "owners", sans-serif;
+    font-family: "owners", sans-serif;
+    /* font-weight: 200; */
+    /* font spacing  */
+    letter-spacing: 0.1rem;
     font-size: 1rem;
     line-height: 1.5;
 }
