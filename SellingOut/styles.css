@@ -247,7 +247,7 @@ body {
 }
 
 .product-img {
-    width: 67%;
+    width: 75%;
     height: auto;
     transition: transform 0.3s;
 }
